@@ -1,14 +1,23 @@
-import React, {Fragment} from 'react';
-import './App.css';
-import NavBar from './components/NavBar';
-import Productocard from './components/producto/Producto';
+import React from 'react'
+import { Header } from "./components/Header";
+import { Carrito } from "./components/Carrito";
+import {DataProvider} from './context/DataProvider';
+import { BrowserRouter as Router} from "react-router-dom";
+import Pages from "./components/Page.js";
+import "boxicons";
 
 function App() {
+
   return (
-      <div>
-        <NavBar></NavBar>
-        <Productocard></Productocard>      
-      </div>
+    <DataProvider>
+    <div className="App">
+      <Router>
+      <Header />
+      <Carrito />
+      <Pages />
+      </Router>
+    </div>
+    </DataProvider>
   );
 }
 
