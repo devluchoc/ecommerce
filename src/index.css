@@ -27,6 +27,7 @@ code {
     width: 100%;
     margin: 0 auto;
     padding-top: 9rem ;
+    
 }
 .inicio h1{
     font-size: 2.5rem;
@@ -38,46 +39,21 @@ code {
 
 /* ----------------- HEADER -------------------*/
 header{
-    width: 97%;
-    min-height: 100px;
-    max-width:1530px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    position: fixed;
-    box-sizing: border-box ;
-    background-color: white;
+    background-color: white!important;
     box-shadow: 0 10px 10px #08a05c50;
 }
-a{      
+.link{      
     color: black;
     text-decoration: none;
     text-transform: uppercase;
 }
-a:hover{
+.link:hover{
     color: #08a05c;
-}
-.menu{
-    display: none;
-}
-li{
-    list-style: none;
-}
-
-header ul{
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-header ul li{
-    padding: 0 1rem;
+    text-decoration: none;
 }
 header ul li a{
     font-weight: bold;
 }
-
 .cart{
     position: relative;
     cursor: pointer;
@@ -85,12 +61,11 @@ header ul li a{
 .cart box-icon{
     width: 45px;
     height: 45px;
-    
 }
 .cart span{
     position: absolute;
     top: -1rem;
-    right: -1.5rem;
+    right:5px;
     width: 2.5rem;
     height: 2.5rem;
     display: flex;
@@ -102,6 +77,10 @@ header ul li a{
     font-weight: 700;
     border-radius: 50%;
     background-color: crimson;
+}
+
+.navbar-toggler-icon{
+    color:blue;
 }
 
 /*----------- PRODUCTOS ------------*/
@@ -126,10 +105,10 @@ header ul li a{
     border: 6px solid transparent;
     cursor: pointer;
     border-radius: 5px;
+    
 }
 .producto:hover{
     border: 6px solid #08a05c57;
-    ;
 }
 .producto__img img{
     width: 310px;
@@ -332,52 +311,15 @@ header ul li a{
     color: #1a202c;
 }
 .detalles .price{
-    font-size: 2.5rem;
     font-weight: 700;
     color: #08a05c;
 }
-.detalles button{
-    max-width: 300px;
-    margin: 1rem 0 0 0;
-    padding: 1rem 1rem;
-    border: none;
-    outline: 0;
-    background-color: #3033d3;
-    font-size: 1.6rem;
-    color: white;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.detalles .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem 1rem;
-    max-width: 350px;
-}
-.detalles .grid > .nuevo, .tamano{
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-   
-}
-.detalles .grid .nuevo{
-    background-color:#08a05c;
+.tamano{
+    background-color:#2e2c2c;
+    border:solid #2e2c2c 1px;
+    border-radius: 15%;
+    color:white;
     
-}
-.detalles .grid .tamano{
-    background-color:#f1365b;
-    display: flex;
-}
-.detalles .grid .tamano select{
-    border: none;
-    outline: 0;
-    font-size: 2rem;
-    background-color:#f1365b;
-    color: white;
-    cursor: pointer;
 }
 .detalles img{
     min-height: 300px;
@@ -404,26 +346,16 @@ header ul li a{
     font-size: 1.4rem;
     color: #30333a;
 }
-
-
-
 /* ------------- RELACIONADO --------- */
 .relacionados{
-    text-align: center;
     background-color: #2e2e2e;
     color: white;
-    max-width: 350px;
-    width: 100%;
-    margin: 5rem auto -2rem auto;
     padding: .5rem 1rem;
     font-size: 18px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-family: Helvetica, sans-serif
-    ;
+    font-family: Helvetica, sans-serif;
 }
-
-
 /* -------------MEDIA -------------*/
 @media only screen and (max-width: 1000px){
     .carrito__item{

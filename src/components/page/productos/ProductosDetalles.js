@@ -43,42 +43,45 @@ export const ProductosDetalles = () => {
     {
         <div className="detalles">
           <h2>{detalle.title}</h2>
-          <p className="price">${detalle.price}</p>
-          <div className="grid">
-          <p className="nuevo">Nuevo</p>
-          <div className="tamano">
-            <select placeholder="Tamaño" >
-              <option value="1">1</option>
-              <option value="1">2</option>
-              <option value="1">3</option>
-              <option value="1">4</option>
-              <option value="1">5</option>
-              <option value="1">6</option>
-              <option value="1">7</option>
-              <option value="1">8</option>
-            </select>
-            <p>Tamaño</p>
-          </div>
-          </div>
-          <button onClick={() => addCarrito(detalle.id)}>
-            Añadir al carrito
-          </button>
           
           {
             url ? <img src={images} alt={detalle.title}/> : <img src={detalle.image} alt={detalle.title}/>
           }
           <input type="range" min="1" max="36" step="1" value={url} onChange={handleInput} />
-          <div className="description">
+          <div className="description container">
           <p><b>description: </b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum necessitatibus soluta alias porro, saepe facere expedita asperiores quos fugit inventore ex, itaque sapiente quae pariatur beatae optio repellat aperiam quia possimus mollitia repellendus? Illo natus quam eaque impedit omnis pariatur!</p>
-          <br/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae accusantium omnis, facere laudantium ipsa hic reprehenderit blanditiis quibusdam quos repellendus id illo reiciendis magni, aliquid beatae, consequatur sapiente! Sequi facere itaque,</p>
+          </div>
+          <div className="">
+            <div className="d-flex justify-content-center ">
+              <div className="">
+                <select class="form-select tamano" id="validationDefault04" required>
+                <option selected disabled value="">Tamaño</option>
+                <option>1 USA</option>
+                <option>2 USA</option>
+                <option>3 USA</option>
+                <option>4 USA</option>
+                <option>5 USA</option>
+                <option>6 USA</option>
+                <option>7 USA</option>
+                </select>
+                </div>
+            </div>
+            <div className="row">
+              <p className="price display-3 col-sm-12 text-center">${detalle.price}</p>
+              <div className="col-sm-12 text-center">
+                <button type="button" class="btn btn-success" onClick={() => addCarrito(detalle.id)}>Añadir al carrito</button>
+              </div>
+          </div>
           </div>
           
         </div>
-   
     }
-    <h2 className="relacionados">Productos relacionados</h2>
-    <div className="productos">
+    <div className="container">
+      <div className="pt-5">
+      <h2 className="relacionados text-center mx-auto mt-4 mb-3">Productos relacionados</h2>
+      </div>
+    
+    <div className="productos container">
       {
         productos.map((producto)=>{
           if((item < 6)&&(detalle.category === producto.category)){
@@ -97,6 +100,7 @@ export const ProductosDetalles = () => {
         })
       }
      
+    </div>
     </div>
     </>
   )
