@@ -3,7 +3,7 @@
 Proyecto Ecommerce realizado durante el curso "ReactJS" de [Coderhouse](https://www.coderhouse.com).
 Se utilizó [Create React App](https://es.reactjs.org/docs/create-a-new-react-app.html). para construir la aplicación..
 
-
+![NikeShoes](https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-6213c.appspot.com/o/NIKE-SHOES.gif?alt=media&token=ba4ba6bb-d6f0-4912-abb8-c7a470af3d94)
 
 ### Instalación 🔧
 1 - Clonar el proyecto en la PC
@@ -21,7 +21,7 @@ Se han utilizado las siguientes :
 
 *[react-icons](https://fontawesome.com/how-to-use/on-the-web/using-with/react), Version 4.2.0, librería de iconos
 
-*[React-Router-Dom](https://reactrouter.com/) Version 5.2.0, para el ruteo de la app
+*[React-Router-Dom](https://www.npmjs.com/package/react-router-dom) Version 5.2.0, permite configurar rutas dinámicas
 
 *[Firebase](https://firebase.google.com/), Base de datos del proyecto
 
