@@ -1,12 +1,57 @@
-import React, { useContext } from "react";
-import Card from "images/img02.jpg";
+import React, { useContext, useState } from "react";
 import { DataContext } from "context/DataProvider";
+import CheckoutForm from "./page/productos/formcheck";
+import { getFirestore } from "../firebase/index";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 export const Carrito = () => {
   const value = useContext(DataContext);
   const [menu, setMenu] = value.menu;
   const [carrito, setCarrito] = value.carrito;
   const [total] = value.total;
+  const [name, setName] = useState(null);
+  const [phone, setPhone] = useState(null);
+  const [email, setEmail] = useState(null);
+  const MySwal = withReactContent(Swal);
+  
+  async function createOrder() {
+    const buyer = {
+      name: name,
+      phone: phone,
+      email: email,
+    };
+
+    const db = getFirestore();
+    const orders = db.collection("orders");
+    const newOrder = {
+      buyer,
+      date: Date.now(),
+      total: total,
+    };
+    orders
+      .add(newOrder)
+      .then(function (docRef) {
+        succeed(docRef.id);
+        console.log(
+          "Documento creado.Id:",
+          docRef.id
+        );
+      })
+      .catch(function (error) {
+        console.error("Error adding document: ", error);
+      });
+  }
+
+  function succeed(id) {
+    MySwal.fire({
+      position: "center",
+      icon: "success",
+      title: `Orden  creada satisfactoriamente! El ID es ${id}`,
+    });
+  }
+
+
 
   const tooglefalse = () => {
     setMenu(false);
@@ -86,15 +131,27 @@ export const Carrito = () => {
               </div>
             </div>
 					))
-				};
-					
+				}
+					 <CheckoutForm  setName={setName}
+            setPhone={setPhone}
+            setEmail={setEmail}
+             />
+			 
 					</>
 					}
         </div>
 
         <div className="carrito__footer">
           <h3>Total: ${total}</h3>
-          <button className="btn">Payment</button>
+          <button className="btn" onClick={createOrder} disabled={
+ 
+									name === null ||
+									phone === null ||
+									email === null ||
+									name.length < 1 ||
+									email.length < 1 ||
+									phone.length < 1
+									} >Comprar</button>
         </div>
       </div>
     </div>

@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# PROYECTO ECOMMERCE- NIKE SHOES
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto Ecommerce realizado durante el curso "ReactJS" de [Coderhouse](https://www.coderhouse.com).
+Se utilizó [Create React App](https://es.reactjs.org/docs/create-a-new-react-app.html). para construir la aplicación..
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+### Instalación 🔧
+1 - Clonar el proyecto en la PC
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2 - Abrir la consola y utilizar "npm install" dentro de la carpeta del proyecto.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3 - Por ultimo, para poder visualizar el proyecto en el navegador utilizamos "npm start".
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Construido con 🛠️:
 
-### `npm run build`
+Se han utilizado las siguientes :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*[React-Bootstrap](https://platzi.com/tutoriales/1199-react/3051-incluir-bootstrap-en-react/) Version 4.6.0, para adaptar la interfaz del sitio web al tamaño del dispositivo en que se visualice.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*[react-icons](https://fontawesome.com/how-to-use/on-the-web/using-with/react), Version 4.2.0, librería de iconos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*[React-Router-Dom](https://reactrouter.com/) Version 5.2.0, para el ruteo de la app
 
-### `npm run eject`
+*[Firebase](https://firebase.google.com/), Base de datos del proyecto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+*[sweetalert2](https://sweetalert2.github.io/#download)Version 10.15.5, agrega soporte para elementos React como contenido.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

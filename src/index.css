@@ -294,6 +294,15 @@ header ul li a{
     background-color: #0f5c39;
     color: white;
 }
+.orden {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
 /*--------------DETALLES --------------*/
 .detalles{
     display: flex;
