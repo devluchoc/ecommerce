@@ -3,7 +3,7 @@
 Proyecto Ecommerce realizado durante el curso "ReactJS" de [Coderhouse](https://www.coderhouse.com).
 Se utilizó [Create React App](https://es.reactjs.org/docs/create-a-new-react-app.html). para construir la aplicación..
 
-![](https://i.imgur.com/mghOUBvt.gif)
+![](https://i.imgur.com/mghOUBvm.gif)
 
 ### Instalación 🔧
 1 - Clonar el proyecto en la PC
