@@ -3,7 +3,7 @@
 Proyecto Ecommerce realizado durante el curso "ReactJS" de [Coderhouse](https://www.coderhouse.com).
 Se utilizó [Create React App](https://es.reactjs.org/docs/create-a-new-react-app.html). para construir la aplicación..
 
-![NikeShoes](https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-6213c.appspot.com/o/NIKE-SHOES.gif?alt=media&token=ba4ba6bb-d6f0-4912-abb8-c7a470af3d94)
+![](https://i.imgur.com/mghOUBvt.gif)
 
 ### Instalación 🔧
 1 - Clonar el proyecto en la PC
